@@ -2179,32 +2179,88 @@ MonoBehaviour:
   scoreSystem: {fileID: 732259450}
   mainVideoPlayer: {fileID: 608926919}
   poseTimeline:
-  - time: 0
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
+  - time: 2
+    poseJson: {fileID: 4900000, guid: 62021d3123a4b814e9f303b8d8599f7d, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
   - time: 3
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
+    poseJson: {fileID: 4900000, guid: 5825f97e3e118124b93bad53f356f4ee, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
   - time: 7
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
+    poseJson: {fileID: 4900000, guid: 134fd013e5ca9f54299e49dce3f1ad2d, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
   - time: 9
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
+    poseJson: {fileID: 4900000, guid: 6f2e6e0367c472b419cdee1ec81aa6f5, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
   - time: 11
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
+    poseJson: {fileID: 4900000, guid: 8f3c560483ce5df469dd5072a31ed065, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
   - time: 13
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
+    poseJson: {fileID: 4900000, guid: 5e1d56fe3bd98e04980abfe541628331, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
   - time: 15
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 15
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 15
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 15
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 15
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 15
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 15
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 15
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 15
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 15
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 15
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 15
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 15
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 15
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 15
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
   angleTolerance: 30
@@ -2797,8 +2853,8 @@ RectTransform:
   m_GameObject: {fileID: 785833888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 274961633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4934,7 +4990,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 274961633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4958,34 +5014,70 @@ MonoBehaviour:
   container: {fileID: 785833889}
   pictogramPrefab: {fileID: 5869070598707738213, guid: 3e2556251461fa746be518415cca580a, type: 3}
   poseSprites:
-  - {fileID: 21300000, guid: 96d1f92c567a4f94b9a1f695a2cff5bb, type: 3}
-  - {fileID: 21300000, guid: 3d1303096a271d34cb0f79972f3e4738, type: 3}
-  - {fileID: 21300000, guid: 2536f2863de884a4f88cbc721c4221c8, type: 3}
-  - {fileID: 21300000, guid: 3b5c9e5029755c94ba88a8d5757485c6, type: 3}
-  - {fileID: 21300000, guid: 130312bd624bea34092ee5527e52a755, type: 3}
-  - {fileID: 21300000, guid: 2d9cb4c114d186145a4d2cbd4fe6b697, type: 3}
-  - {fileID: 21300000, guid: f27999ed95430544088a1b0749d85fee, type: 3}
-  - {fileID: 21300000, guid: 0455eae43f0452f4eb21380ed83519c2, type: 3}
-  - {fileID: 21300000, guid: e8917116f20e67e4cb0949111b4e8855, type: 3}
-  - {fileID: 21300000, guid: e51ed403e1377ef4e8bc65329457f9d4, type: 3}
-  spawnPos: {x: 100, y: 100}
-  stopPos: {x: -200, y: 100}
-  moveDuration: 2
+  - {fileID: 21300000, guid: 880e6b98dbd868745810f1b0240b0591, type: 3}
+  - {fileID: 21300000, guid: 421199651782aa24f9898f787a9c6e27, type: 3}
+  - {fileID: 21300000, guid: ee3b5f646a4ff2642a2c0bfd389be7d6, type: 3}
+  - {fileID: 21300000, guid: e9324f48e329a3f4e866ce93d3954647, type: 3}
+  - {fileID: 21300000, guid: 349b86246a287ed46849fcd4b674f996, type: 3}
+  - {fileID: 21300000, guid: a04f5ad3132d8d548b1b03f18de0c9c8, type: 3}
+  - {fileID: 21300000, guid: 2c7c902ead293f04f8694926125aec82, type: 3}
+  - {fileID: 21300000, guid: c09e014ebad780c48b913985e7e8bad5, type: 3}
+  - {fileID: 21300000, guid: aef34395710b1df47a2fa8455d7cf096, type: 3}
+  - {fileID: 21300000, guid: d3ad1fa9cc1226842bf0033f9a6cec7d, type: 3}
+  - {fileID: 21300000, guid: 333275dbde4fbc44ca0768526ff8d46d, type: 3}
+  - {fileID: 21300000, guid: 8a96843396f3062469efef8f424942a8, type: 3}
+  - {fileID: 21300000, guid: a1eaedb59fffac848ab4fb7e17420f8e, type: 3}
+  - {fileID: 21300000, guid: 17d54855135b495499a335c956778691, type: 3}
+  - {fileID: 21300000, guid: 0062d28c1bbab0c4998de76ceef8479b, type: 3}
+  - {fileID: 21300000, guid: 4db851390ab098c44a6f69fb5b25aba8, type: 3}
+  - {fileID: 21300000, guid: f43a03a2df8b44d48b77850bae5b2cc8, type: 3}
+  - {fileID: 21300000, guid: 40f50f50910505e4eaa98b27e14a9d34, type: 3}
+  - {fileID: 21300000, guid: df9776c6318a90b44a91a5c7a84ad4c1, type: 3}
+  - {fileID: 21300000, guid: 5c5b0b9506866964fb0395f53fab5854, type: 3}
+  spawnPos: {x: 0, y: 100}
+  stopPos: {x: -300, y: 100}
+  moveDuration: 1
   holdDuration: 0.3
-  fadeDuration: 0.5
+  fadeDuration: 0.3
   schedule:
   - time: 0
-    poseIndex: 3
+    poseIndex: 0
   - time: 1
+    poseIndex: 1
+  - time: 2
+    poseIndex: 2
+  - time: 3
     poseIndex: 3
+  - time: 4
+    poseIndex: 4
   - time: 5
-    poseIndex: 3
+    poseIndex: 5
+  - time: 6
+    poseIndex: 6
   - time: 7
-    poseIndex: 3
+    poseIndex: 7
+  - time: 9
+    poseIndex: 9
+  - time: 10
+    poseIndex: 10
   - time: 11
-    poseIndex: 3
+    poseIndex: 11
+  - time: 12
+    poseIndex: 12
   - time: 13
-    poseIndex: 3
+    poseIndex: 13
+  - time: 14
+    poseIndex: 14
+  - time: 15
+    poseIndex: 15
+  - time: 16
+    poseIndex: 16
+  - time: 17
+    poseIndex: 17
+  - time: 18
+    poseIndex: 18
+  - time: 19
+    poseIndex: 19
   poseGameManager: {fileID: 696086277}
 --- !u!1 &1938030411
 GameObject:

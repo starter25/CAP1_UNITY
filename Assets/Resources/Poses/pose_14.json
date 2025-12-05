@@ -1,0 +1,37 @@
+{
+  "pose_name": "pose_14",
+  "joints": [
+    {
+      "name": "left_elbow",
+      "angle": 115.29189849467208
+    },
+    {
+      "name": "right_elbow",
+      "angle": 173.94832317583317
+    },
+    {
+      "name": "left_shoulder",
+      "angle": 16.38470663644349
+    },
+    {
+      "name": "right_shoulder",
+      "angle": 142.57037416988615
+    },
+    {
+      "name": "left_knee",
+      "angle": 174.6952310918905
+    },
+    {
+      "name": "right_knee",
+      "angle": 166.23894823986603
+    },
+    {
+      "name": "left_leg_spread",
+      "angle": 84.24177382651129
+    },
+    {
+      "name": "right_leg_spread",
+      "angle": 93.69469856318604
+    }
+  ]
+}
