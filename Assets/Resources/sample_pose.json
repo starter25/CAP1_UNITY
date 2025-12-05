@@ -1,0 +1,11 @@
+{
+  "pose_name": "cheer_pose_test",
+  "joints": {
+    "left_elbow": 130.2778831389115,
+    "right_elbow": 118.9067979965429,
+    "left_shoulder": 131.4543070243961,
+    "right_shoulder": 102.55279066962343,
+    "left_knee": 109.28903415101836,
+    "right_knee": 111.27289675538721
+  }
+}
