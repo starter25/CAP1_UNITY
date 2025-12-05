@@ -20,23 +20,11 @@ public class UdpPoseReceiver : MonoBehaviour
     string latestJson = null;
     bool hasNewJson = false;
 
-    // 실시간 joints 데이터를 Dictionary 형태로 저장
     public Dictionary<string, float> LatestAngles { get; private set; }
         = new Dictionary<string, float>();
 
     public bool HasValidPose { get; private set; } = false;
 
-    // 🔥 현재 Python PoseSender가 보내는 JSON 형식과 맞춘 패킷 정의
-    // {
-    //   "left_elbow":  ...,
-    //   "right_elbow": ...,
-    //   "left_shoulder": ...,
-    //   "right_shoulder": ...,
-    //   "left_knee": ...,
-    //   "right_knee": ...,
-    //   "left_leg_spread": ...,
-    //   "right_leg_spread": ...
-    // }
     [Serializable]
     private class AnglesPacket
     {
@@ -89,7 +77,7 @@ public class UdpPoseReceiver : MonoBehaviour
         }
         catch
         {
-            // 종료 시 예외 무시
+            // 종료 과정에서 나는 예외는 무시
         }
     }
 
@@ -117,7 +105,6 @@ public class UdpPoseReceiver : MonoBehaviour
 
         try
         {
-            // 1) JSON을 AnglesPacket으로 파싱
             AnglesPacket packet = JsonUtility.FromJson<AnglesPacket>(json);
 
             if (packet != null)
@@ -125,7 +112,6 @@ public class UdpPoseReceiver : MonoBehaviour
                 if (LatestAngles == null)
                     LatestAngles = new Dictionary<string, float>();
 
-                // 2) Dictionary<string,float>에 옮겨 담기
                 LatestAngles["left_elbow"]       = packet.left_elbow;
                 LatestAngles["right_elbow"]      = packet.right_elbow;
                 LatestAngles["left_shoulder"]    = packet.left_shoulder;
@@ -149,13 +135,47 @@ public class UdpPoseReceiver : MonoBehaviour
         }
     }
 
-    void OnApplicationQuit()
+    // 🔥 공통 정리 함수
+    private void StopUdp()
     {
         isRunning = false;
 
-        try { udpClient?.Close(); } catch { }
+        try
+        {
+            if (udpClient != null)
+            {
+                udpClient.Close();   // 포트 반환
+                udpClient = null;
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning("[UdpPoseReceiver] udpClient.Close 예외: " + e.Message);
+        }
 
-        if (receiveThread != null && receiveThread.IsAlive)
-            receiveThread.Abort();
+        try
+        {
+            if (receiveThread != null && receiveThread.IsAlive)
+            {
+                receiveThread.Abort();
+                receiveThread = null;
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning("[UdpPoseReceiver] receiveThread.Abort 예외: " + e.Message);
+        }
+    }
+
+    void OnDestroy()
+    {
+        // 씬이 바뀌거나 오브젝트가 파괴될 때도 반드시 정리
+        StopUdp();
+    }
+
+    void OnApplicationQuit()
+    {
+        // 앱 완전 종료 시에도 안전하게 한 번 더 정리
+        StopUdp();
     }
 }

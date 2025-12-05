@@ -4,6 +4,22 @@ using UnityEngine;
 
 public static class PoseComparer
 {
+    // JSON 구조 정의
+    [Serializable]
+    private class JointJson
+    {
+        public string name;
+        public float angle;
+    }
+
+    [Serializable]
+    private class PoseJson
+    {
+        public string pose_name;
+        public JointJson[] joints;
+    }
+
+    // 게임에서 사용할 구조
     [Serializable]
     public class RefPoseData
     {
@@ -11,14 +27,33 @@ public static class PoseComparer
         public Dictionary<string, float> joints;
     }
 
-    // JSON 파일에서 reference PoseData 읽기
-    public static RefPoseData LoadRefPose(TextAsset json)
+    // JSON → RefPoseData 변환
+    public static RefPoseData LoadRefPose(TextAsset jsonAsset)
     {
-        if (json == null) return null;
-        return JsonUtility.FromJson<RefPoseData>(json.text);
+        if (jsonAsset == null || string.IsNullOrEmpty(jsonAsset.text))
+            return null;
+
+        PoseJson raw = JsonUtility.FromJson<PoseJson>(jsonAsset.text);
+
+        if (raw == null || raw.joints == null || raw.joints.Length == 0)
+            return null;
+
+        var dict = new Dictionary<string, float>();
+
+        foreach (var j in raw.joints)
+        {
+            if (!string.IsNullOrEmpty(j.name))
+                dict[j.name] = j.angle;
+        }
+
+        return new RefPoseData
+        {
+            pose_name = raw.pose_name,
+            joints = dict
+        };
     }
 
-    // 현재 Pose(Dictionary) vs RefPoseData 비교
+    // 비교 함수
     public static float Compare(Dictionary<string, float> current,
                                 RefPoseData reference,
                                 float tolerance = 60f)
@@ -31,22 +66,19 @@ public static class PoseComparer
 
         foreach (var kv in reference.joints)
         {
-            string key = kv.Key;
-            float refVal = kv.Value;
+            string joint = kv.Key;
+            float refAngle = kv.Value;
 
-            if (!current.ContainsKey(key))
+            if (!current.TryGetValue(joint, out float curAngle))
                 continue;
 
-            float curVal = current[key];
-            float diff = Mathf.Abs(curVal - refVal);
+            float diff = Mathf.Abs(curAngle - refAngle);
+            float score01 = Mathf.Clamp01(1f - diff / tolerance);
 
-            float score01 = 1f - (diff / tolerance);
-            score01 = Mathf.Clamp01(score01);
+            float weight = GetWeight(joint);
 
-            float w = GetWeight(key);
-
-            sum += score01 * w;
-            totalWeight += w;
+            sum += score01 * weight;
+            totalWeight += weight;
         }
 
         if (totalWeight == 0f) return 0f;

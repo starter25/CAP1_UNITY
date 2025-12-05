@@ -19,10 +19,28 @@ public class PreGameUIController : MonoBehaviour
     // 미션 닫기 버튼에서 호출할 함수
     public void OnClickCloseMission()
     {
-        if (missionPanel != null) missionPanel.SetActive(false);
-        if (captainSelectPanel != null) captainSelectPanel.SetActive(true);
-    }
+        Debug.Log("▶ OnClickCloseMission 호출됨");
 
+        if (missionPanel != null)
+        {
+            missionPanel.SetActive(false);
+            Debug.Log(" - missionPanel 비활성화");
+        }
+        else
+        {
+            Debug.LogWarning(" - missionPanel 이 연결 안 되어 있음!");
+        }
+
+        if (captainSelectPanel != null)
+        {
+            captainSelectPanel.SetActive(true);
+            Debug.Log(" - captainSelectPanel 활성화");
+        }
+        else
+        {
+            Debug.LogWarning(" - captainSelectPanel 이 연결 안 되어 있음!");
+        }
+    }
     public void OnClickStartGame()
     {
         SceneManager.LoadScene("PlayScene");

@@ -2180,23 +2180,31 @@ MonoBehaviour:
   mainVideoPlayer: {fileID: 608926919}
   poseTimeline:
   - time: 0
-    poseJson: {fileID: 0}
+    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
-  - time: 0
-    poseJson: {fileID: 0}
+  - time: 3
+    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
-  - time: 0
-    poseJson: {fileID: 0}
+  - time: 7
+    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
-  - time: 0
-    poseJson: {fileID: 0}
+  - time: 9
+    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
-  - time: 0
-    poseJson: {fileID: 0}
+  - time: 11
+    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 13
+    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 15
+    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
   angleTolerance: 30
@@ -4953,7 +4961,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 96d1f92c567a4f94b9a1f695a2cff5bb, type: 3}
   - {fileID: 21300000, guid: 3d1303096a271d34cb0f79972f3e4738, type: 3}
   - {fileID: 21300000, guid: 2536f2863de884a4f88cbc721c4221c8, type: 3}
-  - {fileID: 21300000, guid: a2d9544466c6620409810b726b6164e7, type: 3}
+  - {fileID: 21300000, guid: 3b5c9e5029755c94ba88a8d5757485c6, type: 3}
   - {fileID: 21300000, guid: 130312bd624bea34092ee5527e52a755, type: 3}
   - {fileID: 21300000, guid: 2d9cb4c114d186145a4d2cbd4fe6b697, type: 3}
   - {fileID: 21300000, guid: f27999ed95430544088a1b0749d85fee, type: 3}
@@ -4961,17 +4969,23 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e8917116f20e67e4cb0949111b4e8855, type: 3}
   - {fileID: 21300000, guid: e51ed403e1377ef4e8bc65329457f9d4, type: 3}
   spawnPos: {x: 100, y: 100}
-  stopPos: {x: -600, y: 100}
-  moveDuration: 3
+  stopPos: {x: -200, y: 100}
+  moveDuration: 2
   holdDuration: 0.3
-  fadeDuration: 0.2
+  fadeDuration: 0.5
   schedule:
+  - time: 0
+    poseIndex: 3
   - time: 1
-    poseIndex: 0
-  - time: 3
-    poseIndex: 1
+    poseIndex: 3
   - time: 5
-    poseIndex: 2
+    poseIndex: 3
+  - time: 7
+    poseIndex: 3
+  - time: 11
+    poseIndex: 3
+  - time: 13
+    poseIndex: 3
   poseGameManager: {fileID: 696086277}
 --- !u!1 &1938030411
 GameObject:
