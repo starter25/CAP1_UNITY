@@ -4914,16 +4914,16 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e8917116f20e67e4cb0949111b4e8855, type: 3}
   - {fileID: 21300000, guid: e51ed403e1377ef4e8bc65329457f9d4, type: 3}
   spawnPos: {x: 100, y: 100}
-  stopPos: {x: -200, y: 100}
-  moveDuration: 1
+  stopPos: {x: -600, y: 100}
+  moveDuration: 3
   holdDuration: 0.3
-  fadeDuration: 0.5
+  fadeDuration: 0.2
   schedule:
   - time: 1
     poseIndex: 0
-  - time: 2
-    poseIndex: 1
   - time: 3
+    poseIndex: 1
+  - time: 5
     poseIndex: 2
   poseGameManager: {fileID: 696086277}
 --- !u!1 &1938030411
