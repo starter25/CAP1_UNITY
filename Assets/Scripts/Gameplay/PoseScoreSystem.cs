@@ -24,6 +24,10 @@ public class PoseScoreSystem : MonoBehaviour
     }
     public int TotalScore => totalScore;
 
+    [Header("Combo Effect (optional)")]
+    public ComboEffectManager comboEffectManager;
+
+
     // ===================== 판정 기준 ======================
     [Header("Judge Thresholds (0~100 점수 기준)")]
     public float perfectThreshold = 70f;
@@ -133,6 +137,9 @@ public class PoseScoreSystem : MonoBehaviour
         if (comboText != null)
             comboText.text = (comboCount <= 1) ? "" : $"{comboCount} Combo!";
 
+        // 🔥 콤보 이펙트에 알리기 (여기 한 줄 추가)
+        if (comboEffectManager != null)
+            comboEffectManager.OnComboChanged(comboCount);
         // 3. 기본 점수
         int baseScore = grade switch
         {
@@ -220,6 +227,10 @@ public class PoseScoreSystem : MonoBehaviour
 
         if (feverManager != null)
             feverManager.ResetFever();
+
+        // 🔥 콤보 이펙트도 리셋
+        if (comboEffectManager != null)
+            comboEffectManager.ResetEffect();
     }
 
     // =====================================================

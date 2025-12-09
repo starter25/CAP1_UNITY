@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Video;
 
 public class FeverTimeManager : MonoBehaviour
 {
@@ -19,6 +20,19 @@ public class FeverTimeManager : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip feverClip;
 
+    [Header("Fever Video")]
+    [Tooltip("피버 영상이 들어있는 패널 (RawImage + RectMask2D 포함)")]
+    public GameObject feverVideoPanel;     // 캔버스 안 Panel
+
+    [Tooltip("피버 영상을 재생할 VideoPlayer 오브젝트")]
+    public VideoPlayer feverVideoPlayer;   // 씬에 있는 VideoPlayer
+
+    [Tooltip("피버 시 영상 재생 여부")]
+    public bool playVideoOnFever = true;
+
+    [Tooltip("피버 종료 시 영상 정지할지 여부")]
+    public bool stopVideoWhenHidden = true;
+
     // 🔥 피버 횟수 (배율이 아니라 '몇 번째 피버인지' 표시용)
     int feverCount = 0;
     
@@ -36,6 +50,10 @@ public class FeverTimeManager : MonoBehaviour
         if (feverImage != null)
             feverImage.gameObject.SetActive(false);
 
+            // ✅ 시작할 때 영상 패널도 꺼두기
+            if (feverVideoPanel != null)
+            feverVideoPanel.SetActive(false);
+
         UpdateMultiplierUI();
     }
 
@@ -49,6 +67,13 @@ public class FeverTimeManager : MonoBehaviour
             isShowing = false;
             if (feverImage != null)
                 feverImage.gameObject.SetActive(false);
+
+            // ✅ 시간 끝나면 영상 패널도 같이 끄기
+            if (feverVideoPanel != null)
+                feverVideoPanel.SetActive(false);
+
+            if (stopVideoWhenHidden && feverVideoPlayer != null)
+                feverVideoPlayer.Stop();
         }
     }
 
@@ -66,9 +91,21 @@ public class FeverTimeManager : MonoBehaviour
         if (feverImage != null)
             feverImage.gameObject.SetActive(true);
 
+        // 🔥 피버 영상 패널 켜기 (여기가 포인트!)
+        if (feverVideoPanel != null)
+            feverVideoPanel.SetActive(true);
+
+        // 🔥 비디오 재생
+        if (feverVideoPlayer != null)
+        {
+            feverVideoPlayer.Stop();  // 이전 재생 중이었으면 초기화
+            feverVideoPlayer.Play();
+        }
+
         // 사운드 재생
         if (audioSource != null && feverClip != null)
             audioSource.PlayOneShot(feverClip);
+
 
         // 타이머 시작
         isShowing = true;
@@ -77,6 +114,19 @@ public class FeverTimeManager : MonoBehaviour
         Debug.Log($"[FeverTimeManager] FEVER! count = {feverCount}");
     }
 
+    void HideFever()
+    {
+        isShowing = false;
+
+        if (feverImage != null)
+            feverImage.gameObject.SetActive(false);
+
+        if (feverVideoPlayer != null)
+            feverVideoPlayer.Stop();
+
+        if (feverVideoPanel != null)
+            feverVideoPanel.SetActive(false);
+    }
     void UpdateMultiplierUI()
     {
         if (multiplierText == null) return;
@@ -95,6 +145,9 @@ public class FeverTimeManager : MonoBehaviour
 
         if (feverImage != null)
             feverImage.gameObject.SetActive(false);
+
+        if (stopVideoWhenHidden && feverVideoPlayer != null)
+            feverVideoPlayer.Stop();
 
         UpdateMultiplierUI();
     }
