@@ -12,11 +12,20 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
     guid: ce1c4010ad1480a4ca4e465427235511
   - enabled: 1
+    path: Assets/Scenes/LevelScene.unity
+    guid: 86894a5ba6f079244b19e1082b3111c2
+  - enabled: 1
     path: Assets/Scenes/IntroScene.unity
     guid: 38c27cd926ce9dd42bde8521b02128b3
   - enabled: 1
+    path: Assets/Scenes/LevelLoadingScene.unity
+    guid: d640dcd869049794d859c9756b5afed9
+  - enabled: 1
     path: Assets/Scenes/PreGameScene.unity
     guid: 7d79cee514177974cb0a3ed9d8245d2d
+  - enabled: 1
+    path: Assets/Scenes/PlayLoadingScene.unity
+    guid: 8bdaf9b7db9cf55409d4883d27e5d893
   - enabled: 1
     path: Assets/Scenes/PlayScene.unity
     guid: 5e0a1fff0fa2bab40beb2cb3aaec5f88
