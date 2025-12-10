@@ -1003,6 +1003,7 @@ RectTransform:
   - {fileID: 623081552}
   - {fileID: 1714505877}
   - {fileID: 1319051939}
+  - {fileID: 843461111}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2274,31 +2275,31 @@ MonoBehaviour:
   mainVideoPlayer: {fileID: 608926919}
   poseTimeline:
   - time: 0
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
+    poseJson: {fileID: 4900000, guid: 62021d3123a4b814e9f303b8d8599f7d, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
   - time: 3
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
+    poseJson: {fileID: 4900000, guid: 5825f97e3e118124b93bad53f356f4ee, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
   - time: 7
-    poseJson: {fileID: 4900000, guid: 0118af0ca90845e4abfdea63072c762f, type: 3}
+    poseJson: {fileID: 4900000, guid: 134fd013e5ca9f54299e49dce3f1ad2d, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
   - time: 9
-    poseJson: {fileID: 4900000, guid: a23e307ba75ac0d4f96b67c3c2d2351e, type: 3}
+    poseJson: {fileID: 4900000, guid: 6f2e6e0367c472b419cdee1ec81aa6f5, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
   - time: 11
-    poseJson: {fileID: 4900000, guid: eb887a9c5c8f811449a0db351ec0d960, type: 3}
+    poseJson: {fileID: 4900000, guid: 8f3c560483ce5df469dd5072a31ed065, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
   - time: 13
-    poseJson: {fileID: 4900000, guid: 037962466139c2b429ed5fb22e4acbe1, type: 3}
+    poseJson: {fileID: 4900000, guid: 5e1d56fe3bd98e04980abfe541628331, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
   - time: 15
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
   angleTolerance: 60
@@ -2892,7 +2893,7 @@ RectTransform:
   m_GameObject: {fileID: 785833888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 274961633}
@@ -2900,7 +2901,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &789372963
 GameObject:
@@ -3134,6 +3135,140 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &843461110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 843461111}
+  - component: {fileID: 843461113}
+  - component: {fileID: 843461112}
+  - component: {fileID: 843461114}
+  m_Layer: 5
+  m_Name: PictogramGhost
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &843461111
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843461110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 274961633}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -400, y: 100}
+  m_SizeDelta: {x: 300, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &843461112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843461110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &843461113
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843461110}
+  m_CullTransparentMesh: 1
+--- !u!114 &843461114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843461110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35eca283a6382c74b8a8de7cce746db9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PictogramGhostController
+  gameManager: {fileID: 696086277}
+  ghostImage: {fileID: 843461112}
+  showLeadTime: 10
+  extraVisibleAfterWindow: 0.1
+  ghostAlpha: 0.35
+  mappings:
+  - poseName: pose_00
+    sprite: {fileID: 21300000, guid: 880e6b98dbd868745810f1b0240b0591, type: 3}
+  - poseName: pose_01
+    sprite: {fileID: 21300000, guid: 421199651782aa24f9898f787a9c6e27, type: 3}
+  - poseName: pose_02
+    sprite: {fileID: 21300000, guid: ee3b5f646a4ff2642a2c0bfd389be7d6, type: 3}
+  - poseName: pose_03
+    sprite: {fileID: 21300000, guid: e9324f48e329a3f4e866ce93d3954647, type: 3}
+  - poseName: pose_04
+    sprite: {fileID: 21300000, guid: 349b86246a287ed46849fcd4b674f996, type: 3}
+  - poseName: pose_05
+    sprite: {fileID: 21300000, guid: a04f5ad3132d8d548b1b03f18de0c9c8, type: 3}
+  - poseName: pose_06
+    sprite: {fileID: 21300000, guid: 2c7c902ead293f04f8694926125aec82, type: 3}
+  - poseName: pose_07
+    sprite: {fileID: 21300000, guid: c09e014ebad780c48b913985e7e8bad5, type: 3}
+  - poseName: pose_08
+    sprite: {fileID: 21300000, guid: aef34395710b1df47a2fa8455d7cf096, type: 3}
+  - poseName: pose_09
+    sprite: {fileID: 21300000, guid: d3ad1fa9cc1226842bf0033f9a6cec7d, type: 3}
+  - poseName: pose_10
+    sprite: {fileID: 21300000, guid: 333275dbde4fbc44ca0768526ff8d46d, type: 3}
+  - poseName: pose_11
+    sprite: {fileID: 21300000, guid: 8a96843396f3062469efef8f424942a8, type: 3}
+  - poseName: pose12
+    sprite: {fileID: 21300000, guid: a1eaedb59fffac848ab4fb7e17420f8e, type: 3}
+  - poseName: pose_13
+    sprite: {fileID: 21300000, guid: 17d54855135b495499a335c956778691, type: 3}
+  - poseName: pose_14
+    sprite: {fileID: 21300000, guid: 0062d28c1bbab0c4998de76ceef8479b, type: 3}
+  - poseName: pose_15
+    sprite: {fileID: 21300000, guid: 4db851390ab098c44a6f69fb5b25aba8, type: 3}
+  - poseName: pose_16
+    sprite: {fileID: 21300000, guid: f43a03a2df8b44d48b77850bae5b2cc8, type: 3}
+  - poseName: pose17
+    sprite: {fileID: 21300000, guid: 40f50f50910505e4eaa98b27e14a9d34, type: 3}
+  - poseName: pose_18
+    sprite: {fileID: 21300000, guid: df9776c6318a90b44a91a5c7a84ad4c1, type: 3}
+  - poseName: pose_19
+    sprite: {fileID: 21300000, guid: 5c5b0b9506866964fb0395f53fab5854, type: 3}
 --- !u!1 &883456577
 GameObject:
   m_ObjectHideFlags: 0
@@ -4387,7 +4522,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1319051937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5524,7 +5659,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f3a72ba318670f645ad438c07fe5023a, type: 3}
   - {fileID: 21300000, guid: 2e95b9869abb01e4c858de68be6e67f8, type: 3}
   spawnPos: {x: 100, y: 100}
-  stopPos: {x: -200, y: 100}
+  stopPos: {x: -400, y: 100}
   moveDuration: 2
   holdDuration: 0.3
   fadeDuration: 0.5
