@@ -53,6 +53,6 @@ public class PreGameUIController : MonoBehaviour
         }
 
         // 선택 끝났으니 PlayScene으로 이동
-        SceneManager.LoadScene("PlayScene");
+        SceneManager.LoadScene("PlayLoadingScene");
     }
 }
