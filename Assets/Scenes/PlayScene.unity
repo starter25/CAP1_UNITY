@@ -962,7 +962,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -1991,7 +1991,7 @@ MonoBehaviour:
   poseGameManager: {fileID: 696086277}
   defaultClip: {fileID: 32900000, guid: 23b7344dec480e74fb350d97298bd836, type: 3}
   checkpoints:
-  - triggerTime: 10
+  - triggerTime: 42
     requiredScore: 10000
     successClip: {fileID: 32900000, guid: 246d04e6460a5834c8b5d2d6e9ec2fcf, type: 3}
     failClip: {fileID: 32900000, guid: f88eda61dc2a7984fadf38d5d78267ae, type: 3}
@@ -2281,9 +2281,6 @@ MonoBehaviour:
     windowBefore: 0.3
     windowAfter: 0.3
   - time: 7
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     poseJson: {fileID: 4900000, guid: 0118af0ca90845e4abfdea63072c762f, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
@@ -2293,61 +2290,6 @@ MonoBehaviour:
     windowAfter: 0.3
   - time: 11
     poseJson: {fileID: 4900000, guid: eb887a9c5c8f811449a0db351ec0d960, type: 3}
-=======
-=======
-=======
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
-    windowBefore: 0.3
-    windowAfter: 0.3
-  - time: 9
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
-    windowBefore: 0.3
-    windowAfter: 0.3
-  - time: 11
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
-    windowBefore: 0.3
-    windowAfter: 0.3
-  - time: 13
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
-    windowBefore: 0.3
-    windowAfter: 0.3
-  - time: 15
->>>>>>> Stashed changes
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
-    windowBefore: 0.3
-    windowAfter: 0.3
-  - time: 9
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
-    windowBefore: 0.3
-    windowAfter: 0.3
-  - time: 11
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
-    windowBefore: 0.3
-    windowAfter: 0.3
-  - time: 13
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
-    windowBefore: 0.3
-    windowAfter: 0.3
-  - time: 15
->>>>>>> Stashed changes
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
-    windowBefore: 0.3
-    windowAfter: 0.3
-  - time: 9
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
-    windowBefore: 0.3
-    windowAfter: 0.3
-  - time: 11
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
-    windowBefore: 0.3
-    windowAfter: 0.3
-  - time: 13
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
-    windowBefore: 0.3
-    windowAfter: 0.3
-  - time: 15
-    poseJson: {fileID: 4900000, guid: 37bc574f29fb6494cbcc797e3ee54b59, type: 3}
->>>>>>> Stashed changes
     windowBefore: 0.3
     windowAfter: 0.3
   - time: 13
@@ -5451,23 +5393,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3d1303096a271d34cb0f79972f3e4738, type: 3}
   - {fileID: 21300000, guid: 2536f2863de884a4f88cbc721c4221c8, type: 3}
   - {fileID: 21300000, guid: 3b5c9e5029755c94ba88a8d5757485c6, type: 3}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   - {fileID: 21300000, guid: 2e95b9869abb01e4c858de68be6e67f8, type: 3}
   - {fileID: 21300000, guid: d8ca6d4f6c6071c4e819194d51f488e5, type: 3}
   - {fileID: 21300000, guid: f3a72ba318670f645ad438c07fe5023a, type: 3}
   - {fileID: 21300000, guid: 6cfc29cbb754cbd4dae7792d170c8223, type: 3}
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-  - {fileID: 21300000, guid: 130312bd624bea34092ee5527e52a755, type: 3}
-  - {fileID: 21300000, guid: 2d9cb4c114d186145a4d2cbd4fe6b697, type: 3}
-  - {fileID: 21300000, guid: f27999ed95430544088a1b0749d85fee, type: 3}
-  - {fileID: 21300000, guid: 0455eae43f0452f4eb21380ed83519c2, type: 3}
->>>>>>> Stashed changes
   - {fileID: 21300000, guid: e8917116f20e67e4cb0949111b4e8855, type: 3}
   - {fileID: 21300000, guid: f3a72ba318670f645ad438c07fe5023a, type: 3}
   - {fileID: 21300000, guid: 2e95b9869abb01e4c858de68be6e67f8, type: 3}
@@ -5477,12 +5406,7 @@ MonoBehaviour:
   holdDuration: 0.3
   fadeDuration: 0.5
   schedule:
-  - time: 0
-    poseIndex: 3
   - time: 1
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     poseIndex: 0
   - time: 5
     poseIndex: 4
@@ -5497,24 +5421,6 @@ MonoBehaviour:
   - time: 13
     poseIndex: 3
   - time: 13
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-    poseIndex: 3
-  - time: 5
-    poseIndex: 3
-  - time: 7
-    poseIndex: 3
-  - time: 11
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     poseIndex: 3
   - time: 13
     poseIndex: 3
