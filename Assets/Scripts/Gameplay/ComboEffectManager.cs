@@ -94,6 +94,8 @@ public class ComboEffectManager : MonoBehaviour
             return;
         }
 
+        comboPanel.SetActive(true);
+
         slideUI.Play(sprite);
     }
 

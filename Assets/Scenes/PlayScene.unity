@@ -3962,14 +3962,18 @@ MonoBehaviour:
   fadeOutDuration: 0.4
   playOncePerThreshold: 1
   comboEffects:
+  - comboThreshold: 5
+    sprite: {fileID: 21300000, guid: 7869a340b029b134fb64ddc8f827aa73, type: 3}
   - comboThreshold: 10
-    sprite: {fileID: 21300000, guid: f5d668e190b41d84ab9193ac5196a27d, type: 3}
+    sprite: {fileID: 21300000, guid: 7a4c0c317749be34e8ac886fcd264e89, type: 3}
   - comboThreshold: 15
-    sprite: {fileID: 21300000, guid: b7204777256441546a1bdd002e72e502, type: 3}
+    sprite: {fileID: 21300000, guid: a22f71cae2aa231488f2bc775e75e602, type: 3}
   - comboThreshold: 20
-    sprite: {fileID: 21300000, guid: e0a0470fd5065c742a9dc4d018daa76c, type: 3}
+    sprite: {fileID: 21300000, guid: ccb543815e67d2a4db3f33e8a722d740, type: 3}
+  - comboThreshold: 25
+    sprite: {fileID: 21300000, guid: 6b9932e50c19819478b601caa3c03a09, type: 3}
   - comboThreshold: 30
-    sprite: {fileID: 21300000, guid: e0a0470fd5065c742a9dc4d018daa76c, type: 3}
+    sprite: {fileID: 21300000, guid: 659eaf424260ad646a6f25be864478f1, type: 3}
 --- !u!4 &997597025
 Transform:
   m_ObjectHideFlags: 0
@@ -3979,7 +3983,7 @@ Transform:
   m_GameObject: {fileID: 997597023}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 830.82825, y: -1107.6062, z: 4014.2139}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5070,7 +5074,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 512, y: 512}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1431433578
 GameObject:
@@ -6091,7 +6095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1714505877
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6110,7 +6114,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -256, y: 0}
-  m_SizeDelta: {x: 512, y: 512}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714505878
 MonoBehaviour:
@@ -6119,7 +6123,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714505876}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
   m_Name: 
@@ -6139,7 +6143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6178,8 +6182,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ComboSlideUI
   rect: {fileID: 1714505877}
   comboImage: {fileID: 1321120190}
-  hiddenPos: {x: 256, y: 0}
-  shownPos: {x: -256, y: 0}
+  hiddenPos: {x: 960, y: 0}
+  shownPos: {x: -960, y: 0}
   slideDuration: 0.25
   stayDuration: 1
 --- !u!1 &1799276694
