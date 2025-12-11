@@ -2094,8 +2094,8 @@ MonoBehaviour:
   checkpoints:
   - triggerTime: 42
     requiredScore: 10000
-    successClip: {fileID: 32900000, guid: 246d04e6460a5834c8b5d2d6e9ec2fcf, type: 3}
-    failClip: {fileID: 32900000, guid: f88eda61dc2a7984fadf38d5d78267ae, type: 3}
+    successClip: {fileID: 32900000, guid: 6b49985315c768f4b812bd47e16b5204, type: 3}
+    failClip: {fileID: 32900000, guid: 576eea742f3890f4eabf90bea3788f53, type: 3}
 --- !u!114 &608926922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2146,7 +2146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 303.5, y: 0}
+  m_AnchoredPosition: {x: 241.43, y: 0}
   m_SizeDelta: {x: 607, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &623081553
@@ -4051,7 +4051,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031055740}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 9cded2fe880d34e43b1a47c53ba4aaa4, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 22852a74140c5b34786d4326ff62659c, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -4060,7 +4060,7 @@ VideoPlayer:
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
-  m_AspectRatio: 2
+  m_AspectRatio: 0
   m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
