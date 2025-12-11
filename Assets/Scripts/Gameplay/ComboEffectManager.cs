@@ -16,12 +16,15 @@ public class ComboEffectManager : MonoBehaviour
 {
     [Header("UI")]
     [Tooltip("콤보 이펙트가 나올 패널 (마스크 영역)")]
-    public GameObject comboPanel;      // ComboEffectPanel
+    public GameObject comboPanel;      // ComboEffectPanel (지금은 항상 켜둘 것)
 
-    [Tooltip("패널 안에서 이미지를 표시할 UI Image")]
-    public Image comboImage;           // 자식 Image
+    [Header("Slide UI")]
+    public ComboSlideUI slideUI;       // 슬라이드 연출 담당
 
-    [Header("Effect Settings")]
+    [Tooltip("패널 안에서 이미지를 표시할 UI Image (슬라이드에서도 같은 이미지 사용)")]
+    public Image comboImage;           // ComboEffectImage
+
+    [Header("Effect Settings (현재는 사용X, 나중에 확장용)")]
     [Tooltip("이미지가 유지되는 시간(초)")]
     public float showDuration = 1.0f;
 
@@ -39,7 +42,15 @@ public class ComboEffectManager : MonoBehaviour
 
     void Start()
     {
-        HideImmediate();
+        // 패널은 항상 켜둔다 (비활성화하면 코루틴이 안 돌아감)
+        if (comboPanel != null)
+            comboPanel.SetActive(true);
+
+        // 슬라이드 UI가 있으면 시작 위치를 숨겨진 위치로 세팅
+        if (slideUI != null && slideUI.rect != null)
+        {
+            slideUI.rect.anchoredPosition = slideUI.hiddenPos;
+        }
     }
 
     /// <summary>
@@ -77,29 +88,27 @@ public class ComboEffectManager : MonoBehaviour
 
     void Show(Sprite sprite)
     {
-        if (comboPanel == null || comboImage == null)
+        if (slideUI == null)
+        {
+            Debug.LogWarning("Slide UI not assigned!");
             return;
+        }
 
-        comboImage.sprite = sprite;
-        comboImage.SetNativeSize();  // 필요하면 이미지 원본 크기 기준
-
-        comboPanel.SetActive(true);
-
-        if (currentRoutine != null)
-            StopCoroutine(currentRoutine);
-        currentRoutine = StartCoroutine(ShowRoutine());
+        slideUI.Play(sprite);
     }
 
+    // 기존 페이드용 코루틴은 이제 안 쓰이지만,
+    // 혹시 나중에 쓸까봐 남겨두고 싶으면 그대로 두고, 호출만 안 하면 됨.
+    // 지금은 어디에서도 ShowRoutine을 호출하지 않으니까 무시해도 괜찮다.
+    /*
     IEnumerator ShowRoutine()
     {
-        // 알파 1로 시작
         Color c = comboImage.color;
         c.a = 1f;
         comboImage.color = c;
 
         yield return new WaitForSecondsRealtime(showDuration);
 
-        // 페이드 아웃
         float t = 0f;
         while (t < fadeOutDuration)
         {
@@ -113,18 +122,30 @@ public class ComboEffectManager : MonoBehaviour
         HideImmediate();
         currentRoutine = null;
     }
+    */
 
     public void HideImmediate()
     {
+        // 슬라이드 UI가 있다면 바로 숨김 위치로 보내기
+        if (slideUI != null && slideUI.rect != null)
+        {
+            slideUI.rect.anchoredPosition = slideUI.hiddenPos;
+        }
+
+        // 알파는 굳이 조절 안 해도 되지만,
+        // 혹시 모를 경우를 위해 1로 유지하거나 0으로 초기화하고 싶으면 여기서 설정.
+        /*
         if (comboImage != null)
         {
             Color c = comboImage.color;
             c.a = 0f;
             comboImage.color = c;
         }
+        */
 
-        if (comboPanel != null)
-            comboPanel.SetActive(false);
+        // 패널은 절대 SetActive(false) 하지 않는다!
+        // if (comboPanel != null)
+        //     comboPanel.SetActive(false);
     }
 
     public void ResetEffect()

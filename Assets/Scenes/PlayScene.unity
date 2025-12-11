@@ -3956,19 +3956,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ComboEffectManager
   comboPanel: {fileID: 1714505876}
+  slideUI: {fileID: 1714505881}
   comboImage: {fileID: 1321120190}
   showDuration: 1.5
   fadeOutDuration: 0.4
   playOncePerThreshold: 1
   comboEffects:
   - comboThreshold: 10
-    sprite: {fileID: 21300000, guid: 63037209ca796e8488c3a4e7d46fe649, type: 3}
+    sprite: {fileID: 21300000, guid: f5d668e190b41d84ab9193ac5196a27d, type: 3}
   - comboThreshold: 15
-    sprite: {fileID: 21300000, guid: 52dc18f3e26eef94eaea8ad583124cbb, type: 3}
+    sprite: {fileID: 21300000, guid: b7204777256441546a1bdd002e72e502, type: 3}
   - comboThreshold: 20
-    sprite: {fileID: 21300000, guid: 76884c49805405b4cba4db72eba8afe1, type: 3}
+    sprite: {fileID: 21300000, guid: e0a0470fd5065c742a9dc4d018daa76c, type: 3}
   - comboThreshold: 30
-    sprite: {fileID: 21300000, guid: 9a46cdc720cd15b4dba32d2752306e83, type: 3}
+    sprite: {fileID: 21300000, guid: e0a0470fd5065c742a9dc4d018daa76c, type: 3}
 --- !u!4 &997597025
 Transform:
   m_ObjectHideFlags: 0
@@ -5069,7 +5070,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_SizeDelta: {x: 512, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1431433578
 GameObject:
@@ -6083,13 +6084,14 @@ GameObject:
   - component: {fileID: 1714505880}
   - component: {fileID: 1714505879}
   - component: {fileID: 1714505878}
+  - component: {fileID: 1714505881}
   m_Layer: 5
   m_Name: ComboEffectPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1714505877
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6105,9 +6107,9 @@ RectTransform:
   - {fileID: 1321120192}
   m_Father: {fileID: 274961633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -256, y: 256}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -256, y: 0}
   m_SizeDelta: {x: 512, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714505878
@@ -6137,14 +6139,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6162,6 +6164,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714505876}
   m_CullTransparentMesh: 1
+--- !u!114 &1714505881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714505876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0432c8e70b7f7bf4696c6fe787995560, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ComboSlideUI
+  rect: {fileID: 1714505877}
+  comboImage: {fileID: 1321120190}
+  hiddenPos: {x: 256, y: 0}
+  shownPos: {x: -256, y: 0}
+  slideDuration: 0.25
+  stayDuration: 1
 --- !u!1 &1799276694
 GameObject:
   m_ObjectHideFlags: 0
