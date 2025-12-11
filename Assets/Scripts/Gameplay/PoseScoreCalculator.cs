@@ -4,6 +4,7 @@ using UnityEngine;
 
 public static class PoseComparer
 {
+    public static Dictionary<string, float> currentAngles;
     // JSON 구조 정의
     [Serializable]
     private class JointJson
@@ -53,11 +54,18 @@ public static class PoseComparer
         };
     }
 
+
+
     // 비교 함수
     public static float Compare(Dictionary<string, float> current,
                                 RefPoseData reference,
                                 float tolerance = 60f)
     {
+// 🔥 딱 이 순간 각도를 통째로 복사해서 저장
+        currentAngles = (current != null)
+            ? new Dictionary<string, float>(current)
+            : null;
+
         if (current == null || reference == null || reference.joints == null)
             return 0f;
 

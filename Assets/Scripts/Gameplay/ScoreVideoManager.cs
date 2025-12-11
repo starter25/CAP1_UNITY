@@ -10,6 +10,9 @@ public class ScoreVideoManager : MonoBehaviour
     public PoseScoreSystem scoreSystem;  // 점수 시스템
     public PoseGameManager poseGameManager; // 시간(songTime) 기준 제공자
 
+    [Tooltip("픽토그램 고스트 전체를 담고 있는 부모 오브젝트")]
+    public GameObject pictogramGhostRoot;
+
     [Header("Default Video")]
     [Tooltip("게임 시작 시 재생할 기본 배경 영상")]
     public VideoClip defaultClip;
@@ -83,14 +86,19 @@ public class ScoreVideoManager : MonoBehaviour
                 // 재생
                 if (nextClip != null)
                 {
+                    // 🔹 이 줄 추가: 결과 영상 들어가기 직전에 게임플레이 종료
+                    if (poseGameManager != null)
+                        poseGameManager.EndGameplay();
+                    
+                    if (pictogramGhostRoot != null)
+                        pictogramGhostRoot.SetActive(false);
+
                     videoPlayer.clip = nextClip;
                     videoPlayer.time = 0;  // 새 영상 시작은 항상 0초
                     videoPlayer.Play();
 
                     Debug.Log($"[ScoreVideoManager] {t:F1}초 체크포인트 발동 → '{nextClip.name}' 재생");
                 }
-
-                cp.triggered = true;
             }
         }
     }

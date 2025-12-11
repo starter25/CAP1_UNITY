@@ -12,6 +12,9 @@ using TMPro;
 /// </summary>
 public class PoseScoreSystem : MonoBehaviour
 {
+    [Header("Pose Logging")]
+    public PoseLogger poseLogger;
+
 
     public int FeverFillCount
     {
@@ -30,9 +33,10 @@ public class PoseScoreSystem : MonoBehaviour
 
     // ===================== 판정 기준 ======================
     [Header("Judge Thresholds (0~100 점수 기준)")]
-    public float perfectThreshold = 70f;
-    public float greatThreshold   = 55f;
-    public float goodThreshold    = 40f;
+    public float perfectThreshold = 60f;
+    public float greatThreshold   = 50f;
+
+    //public float goodThreshold    = 40f;
 
     // ===================== 기본 점수 ======================
     [Header("Base Score Settings")]
@@ -42,8 +46,8 @@ public class PoseScoreSystem : MonoBehaviour
     [Tooltip("GREAT일 때 기본 점수")]
     public int greatScore = 700;
 
-    [Tooltip("GOOD일 때 기본 점수")]
-    public int goodScore = 400;
+    //[Tooltip("GOOD일 때 기본 점수")]
+//    public int goodScore = 400;
 
     [Tooltip("MISS일 때 기본 점수")]
     public int missScore = 0;
@@ -61,7 +65,7 @@ public class PoseScoreSystem : MonoBehaviour
     // ===================== 결과 저장용 카운트 ======================
     private int perfectCount = 0;
     private int greatCount = 0;
-    private int goodCount = 0;
+    //private int goodCount = 0;
     private int missCount = 0;
 
     private int maxCombo = 0;
@@ -103,7 +107,7 @@ public class PoseScoreSystem : MonoBehaviour
         string grade;
         if (finalScore >= perfectThreshold)      grade = "PERFECT";
         else if (finalScore >= greatThreshold)   grade = "GREAT";
-        else if (finalScore >= goodThreshold)    grade = "GOOD";
+        //else if (finalScore >= goodThreshold)    grade = "GOOD";
         else                                     grade = "MISS";
 
     // 판정 카운트 증가
@@ -111,7 +115,7 @@ public class PoseScoreSystem : MonoBehaviour
     {
         case "PERFECT": perfectCount++; break;
         case "GREAT":   greatCount++;   break;
-        case "GOOD":    goodCount++;    break;
+        //case "GOOD":    goodCount++;    break;
         case "MISS":    missCount++;    break;
     }
 
@@ -145,7 +149,7 @@ public class PoseScoreSystem : MonoBehaviour
         {
             "PERFECT" => perfectScore,
             "GREAT"   => greatScore,
-            "GOOD"    => goodScore,
+            //"GOOD"    => goodScore,
             _         => missScore
         };
 
@@ -187,12 +191,22 @@ public class PoseScoreSystem : MonoBehaviour
         Debug.Log($"[PoseScoreSystem] {poseName} : {grade}, combo={comboCount}, " +
                   $"+{addScore} (base={baseScore}, combo={comboBonus}), " +
                   $"total={totalScore}, gaugeScore={gaugeScore}");
+
+        if (poseLogger != null)
+        {
+            Debug.Log("[PoseScoreSystem] LogPose 호출!");   // 콘솔에서 확인용
+            poseLogger.LogPose(poseName, grade, PoseComparer.currentAngles);
+        }
+        else
+        {
+            Debug.LogWarning("[PoseScoreSystem] poseLogger 가 null 이라서 로그를 못 찍는 중");
+        }
     }
 
     // ===================== 외부에서 결과를 읽기 위한 Getter ======================
     public int PerfectCount => perfectCount;
     public int GreatCount   => greatCount;
-    public int GoodCount    => goodCount;
+    //public int GoodCount    => goodCount;
     public int MissCount    => missCount;
     public int MaxCombo     => maxCombo;
     public float FeverGauge
@@ -247,10 +261,10 @@ public class PoseScoreSystem : MonoBehaviour
         HandleJudgement((perfectThreshold + greatThreshold) * 0.5f, "TEST_GREAT");
     }
 
-    public void TestGood()
-    {
-        HandleJudgement((greatThreshold + goodThreshold) * 0.5f, "TEST_GOOD");
-    }
+    //public void TestGood()
+    //{
+    //    HandleJudgement((greatThreshold + goodThreshold) * 0.5f, "TEST_GOOD");
+    //}
 
     public void TestMiss()
     {

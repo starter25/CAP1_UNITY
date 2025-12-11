@@ -48,10 +48,10 @@ public class PoseGameManager : MonoBehaviour
         public TextAsset poseJson;
 
         [Tooltip("목표 시간보다 '얼마나 일찍'부터 판정을 시작할지 (초)")]
-        public float windowBefore = 0.3f;
+        public float windowBefore = 0.5f;
 
         [Tooltip("목표 시간보다 '얼마나 늦게'까지 허용할지 (초)")]
-        public float windowAfter = 0.3f;
+        public float windowAfter = 0.5f;
 
         // --------- 런타임용 캐시/상태 ---------
         [NonSerialized] public PoseComparer.RefPoseData refPose;  // JSON 파싱 결과
@@ -124,7 +124,7 @@ public class PoseGameManager : MonoBehaviour
     /// 설정한 gameplayEndTime을 지나면 호출되는 게임플레이 종료 처리
     /// - 포즈 판정/점수 갱신을 멈추고, 이후에는 영상만 재생되게 만들고 싶을 때 사용
     /// </summary>
-    void EndGameplay()
+    public void EndGameplay()
     {
         if (isGameplayEnded) return;
 
