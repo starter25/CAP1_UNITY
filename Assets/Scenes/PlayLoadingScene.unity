@@ -488,8 +488,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayLoadingSceneController
   videoPlayer: {fileID: 625621143}
-  femaleClip: {fileID: 32900000, guid: f4b7411677616a744869d4cdadcd87b7, type: 3}
-  maleClip: {fileID: 32900000, guid: 246d04e6460a5834c8b5d2d6e9ec2fcf, type: 3}
+  femaleClip: {fileID: 32900000, guid: fbf0406793022e24d82d5a839f16064f, type: 3}
+  maleClip: {fileID: 32900000, guid: 9a70ff19437897a43b26e3c4324499b8, type: 3}
   playSceneName: PlayScene
   fadePanel: {fileID: 590980056}
   fadeDuration: 0.5

@@ -143,7 +143,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63391703}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -151,12 +151,12 @@ RectTransform:
   - {fileID: 704120645}
   - {fileID: 1102072823}
   - {fileID: 991043821}
-  m_Father: {fileID: 274961633}
+  m_Father: {fileID: 1309265823}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 0}
-  m_SizeDelta: {x: 80, y: 300}
+  m_AnchoredPosition: {x: 35.9, y: 0}
+  m_SizeDelta: {x: 207.6, y: 680}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &63391705
 MonoBehaviour:
@@ -989,7 +989,7 @@ RectTransform:
   - {fileID: 843461111}
   - {fileID: 785833889}
   - {fileID: 1922284288}
-  - {fileID: 63391704}
+  - {fileID: 732006683}
   - {fileID: 1647328982}
   - {fileID: 1938030414}
   - {fileID: 1271101048}
@@ -1005,7 +1005,6 @@ RectTransform:
   - {fileID: 1714505877}
   - {fileID: 1319051939}
   - {fileID: 791232002}
-  - {fileID: 732006683}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2095,8 +2094,8 @@ MonoBehaviour:
   checkpoints:
   - triggerTime: 42
     requiredScore: 10000
-    successClip: {fileID: 32900000, guid: 246d04e6460a5834c8b5d2d6e9ec2fcf, type: 3}
-    failClip: {fileID: 32900000, guid: f88eda61dc2a7984fadf38d5d78267ae, type: 3}
+    successClip: {fileID: 32900000, guid: 6b49985315c768f4b812bd47e16b5204, type: 3}
+    failClip: {fileID: 32900000, guid: 576eea742f3890f4eabf90bea3788f53, type: 3}
 --- !u!114 &608926922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2129,7 +2128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &623081552
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2140,15 +2139,15 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1462129348}
   m_Father: {fileID: 274961633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 256, y: 0}
-  m_SizeDelta: {x: 512, y: 1080}
+  m_AnchoredPosition: {x: 241.43, y: 0}
+  m_SizeDelta: {x: 607, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &623081553
 MonoBehaviour:
@@ -2794,12 +2793,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1309265823}
   m_Father: {fileID: 274961633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -850, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 100, y: 0}
   m_SizeDelta: {x: 85, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &732006684
@@ -2915,10 +2915,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PoseJudgeEffect
   judgeImage: {fileID: 437635819}
   showDuration: 0.6
-  perfectSprite: {fileID: 21300000, guid: ee6a02b016e80ed4dbb4d4ef793c8323, type: 3}
-  greatSprite: {fileID: 21300000, guid: 88d810e055328a5448c38c3a07fd8a5e, type: 3}
-  goodSprite: {fileID: 21300000, guid: b6415d33e77c3c1428a407303f889495, type: 3}
-  missSprite: {fileID: 21300000, guid: 338bfef2263dae74a991514e3981a2fc, type: 3}
+  perfectSprite: {fileID: 21300000, guid: 00ab7c018be8f8047a031c299e4a774e, type: 3}
+  greatSprite: {fileID: 21300000, guid: 0a631a53aa8ed624e9b3206f59061f9e, type: 3}
+  goodSprite: {fileID: 21300000, guid: 608e4bfafac42834aa451c152e4bdf7b, type: 3}
+  missSprite: {fileID: 21300000, guid: 9c63939a48b98954e9ddd86e219c46b8, type: 3}
   audioSource: {fileID: 1034015237}
   perfectClip: {fileID: 8300000, guid: 28fa3487578e4a54892200d8d1e0b0e2, type: 3}
   greatClip: {fileID: 8300000, guid: 28fa3487578e4a54892200d8d1e0b0e2, type: 3}
@@ -3956,19 +3956,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ComboEffectManager
   comboPanel: {fileID: 1714505876}
+  slideUI: {fileID: 1714505881}
   comboImage: {fileID: 1321120190}
   showDuration: 1.5
   fadeOutDuration: 0.4
   playOncePerThreshold: 1
   comboEffects:
+  - comboThreshold: 5
+    sprite: {fileID: 21300000, guid: 7869a340b029b134fb64ddc8f827aa73, type: 3}
   - comboThreshold: 10
-    sprite: {fileID: 21300000, guid: 63037209ca796e8488c3a4e7d46fe649, type: 3}
+    sprite: {fileID: 21300000, guid: 7a4c0c317749be34e8ac886fcd264e89, type: 3}
   - comboThreshold: 15
-    sprite: {fileID: 21300000, guid: 52dc18f3e26eef94eaea8ad583124cbb, type: 3}
+    sprite: {fileID: 21300000, guid: a22f71cae2aa231488f2bc775e75e602, type: 3}
   - comboThreshold: 20
-    sprite: {fileID: 21300000, guid: 76884c49805405b4cba4db72eba8afe1, type: 3}
+    sprite: {fileID: 21300000, guid: ccb543815e67d2a4db3f33e8a722d740, type: 3}
+  - comboThreshold: 25
+    sprite: {fileID: 21300000, guid: 6b9932e50c19819478b601caa3c03a09, type: 3}
   - comboThreshold: 30
-    sprite: {fileID: 21300000, guid: 9a46cdc720cd15b4dba32d2752306e83, type: 3}
+    sprite: {fileID: 21300000, guid: 659eaf424260ad646a6f25be864478f1, type: 3}
 --- !u!4 &997597025
 Transform:
   m_ObjectHideFlags: 0
@@ -3978,7 +3983,7 @@ Transform:
   m_GameObject: {fileID: 997597023}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 830.82825, y: -1107.6062, z: 4014.2139}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4046,7 +4051,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031055740}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: f88eda61dc2a7984fadf38d5d78267ae, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 22852a74140c5b34786d4326ff62659c, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -4055,7 +4060,7 @@ VideoPlayer:
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
-  m_AspectRatio: 2
+  m_AspectRatio: 0
   m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
@@ -4831,6 +4836,96 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271101047}
   m_CullTransparentMesh: 1
+--- !u!1 &1309265822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1309265823}
+  - component: {fileID: 1309265826}
+  - component: {fileID: 1309265825}
+  - component: {fileID: 1309265824}
+  m_Layer: 5
+  m_Name: GaugeBarInner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1309265823
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309265822}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 63391704}
+  m_Father: {fileID: 732006683}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 71.3, y: 679.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1309265824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309265822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Mask
+  m_ShowMaskGraphic: 0
+--- !u!114 &1309265825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309265822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 14df7c04599562749a7e3ab03936e0d0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1309265826
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309265822}
+  m_CullTransparentMesh: 1
 --- !u!1 &1319051936
 GameObject:
   m_ObjectHideFlags: 0
@@ -5015,7 +5110,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -701.3, y: 100}
+  m_AnchoredPosition: {x: 473.3, y: 351.5}
   m_SizeDelta: {x: 512, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1431433580
@@ -5038,7 +5133,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3bd7a18ea48f45c40a2a288ced97514d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3f9d667f97de05e4e81703cd074bdcb8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5993,6 +6088,7 @@ GameObject:
   - component: {fileID: 1714505880}
   - component: {fileID: 1714505879}
   - component: {fileID: 1714505878}
+  - component: {fileID: 1714505881}
   m_Layer: 5
   m_Name: ComboEffectPanel
   m_TagString: Untagged
@@ -6015,10 +6111,10 @@ RectTransform:
   - {fileID: 1321120192}
   m_Father: {fileID: 274961633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -256, y: 256}
-  m_SizeDelta: {x: 512, y: 512}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -256, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714505878
 MonoBehaviour:
@@ -6027,7 +6123,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714505876}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
   m_Name: 
@@ -6047,14 +6143,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6072,6 +6168,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714505876}
   m_CullTransparentMesh: 1
+--- !u!114 &1714505881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714505876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0432c8e70b7f7bf4696c6fe787995560, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ComboSlideUI
+  rect: {fileID: 1714505877}
+  comboImage: {fileID: 1321120190}
+  hiddenPos: {x: 960, y: 0}
+  shownPos: {x: -960, y: 0}
+  slideDuration: 0.25
+  stayDuration: 1
 --- !u!1 &1799276694
 GameObject:
   m_ObjectHideFlags: 0

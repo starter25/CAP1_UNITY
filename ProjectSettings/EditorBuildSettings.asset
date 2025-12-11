@@ -25,7 +25,7 @@ EditorBuildSettings:
     guid: 7d79cee514177974cb0a3ed9d8245d2d
   - enabled: 1
     path: Assets/Scenes/PlayLoadingScene.unity
-    guid: 8bdaf9b7db9cf55409d4883d27e5d893
+    guid: 3a2b3bda99ab8c74f814715b1c919392
   - enabled: 1
     path: Assets/Scenes/PlayScene.unity
     guid: 5e0a1fff0fa2bab40beb2cb3aaec5f88

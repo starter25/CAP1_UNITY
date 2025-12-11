@@ -43,7 +43,7 @@ public class ResultSceneUI : MonoBehaviour
             float percent = GameResultData.FeverGauge * 100f;
             int count = GameResultData.FeverCount;
             // 🔹 "n회 (n%)" 형식으로 표시
-            feverGaugeText.text = $"Fever : {count}, ({percent:0}%)";
+            feverGaugeText.text = $"Fever Count : {count}.({percent:0}%)";
         }
     }
 
