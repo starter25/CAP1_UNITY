@@ -2373,32 +2373,144 @@ MonoBehaviour:
   scoreSystem: {fileID: 732259450}
   mainVideoPlayer: {fileID: 608926919}
   poseTimeline:
-  - time: 0
+  - time: 6.05
     poseJson: {fileID: 4900000, guid: 62021d3123a4b814e9f303b8d8599f7d, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
-  - time: 3
+  - time: 6.28
+    poseJson: {fileID: 4900000, guid: 62021d3123a4b814e9f303b8d8599f7d, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 7.17
+    poseJson: {fileID: 4900000, guid: 62021d3123a4b814e9f303b8d8599f7d, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 8.05
+    poseJson: {fileID: 4900000, guid: 62021d3123a4b814e9f303b8d8599f7d, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 8.27
+    poseJson: {fileID: 4900000, guid: 62021d3123a4b814e9f303b8d8599f7d, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 9.19
+    poseJson: {fileID: 4900000, guid: 62021d3123a4b814e9f303b8d8599f7d, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 10.08
+    poseJson: {fileID: 4900000, guid: 62021d3123a4b814e9f303b8d8599f7d, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 11.17
     poseJson: {fileID: 4900000, guid: 5825f97e3e118124b93bad53f356f4ee, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
-  - time: 7
+  - time: 12.28
     poseJson: {fileID: 4900000, guid: 134fd013e5ca9f54299e49dce3f1ad2d, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
-  - time: 9
+  - time: 14.1
     poseJson: {fileID: 4900000, guid: 6f2e6e0367c472b419cdee1ec81aa6f5, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
-  - time: 11
+  - time: 15.24
     poseJson: {fileID: 4900000, guid: 8f3c560483ce5df469dd5072a31ed065, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
-  - time: 13
+  - time: 17.12
     poseJson: {fileID: 4900000, guid: 5e1d56fe3bd98e04980abfe541628331, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
-  - time: 15
+  - time: 18.01
     poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 18.21
+    poseJson: {fileID: 4900000, guid: f4bee55242eab7e4f900ee1d06792bb9, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 20.12
+    poseJson: {fileID: 4900000, guid: 8ae82ec303b080d4283735bb4a0763d3, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 22.06
+    poseJson: {fileID: 4900000, guid: f42d46fa6c92a8547ad00db3be0aea4f, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 23.01
+    poseJson: {fileID: 4900000, guid: f5121966e3df9f44ea48ef1527431b3a, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 23.21
+    poseJson: {fileID: 4900000, guid: f5121966e3df9f44ea48ef1527431b3a, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 24.01
+    poseJson: {fileID: 4900000, guid: 728de1f2384c897468a6266c4a5e5d6e, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 24.24
+    poseJson: {fileID: 4900000, guid: 728de1f2384c897468a6266c4a5e5d6e, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 25.19
+    poseJson: {fileID: 4900000, guid: 37bda657483932d46835ce64c5626a71, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 26.13
+    poseJson: {fileID: 4900000, guid: 37bda657483932d46835ce64c5626a71, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 26.24
+    poseJson: {fileID: 4900000, guid: 6161340e72130af41a46600b85ceb4f8, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 27.15
+    poseJson: {fileID: 4900000, guid: 6161340e72130af41a46600b85ceb4f8, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 28.19
+    poseJson: {fileID: 4900000, guid: 5e1d56fe3bd98e04980abfe541628331, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 29.09
+    poseJson: {fileID: 4900000, guid: 8b04920ef9931d74db4af7f8b16d46f5, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 29.28
+    poseJson: {fileID: 4900000, guid: f4bee55242eab7e4f900ee1d06792bb9, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 31.15
+    poseJson: {fileID: 4900000, guid: 8ae82ec303b080d4283735bb4a0763d3, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 33.02
+    poseJson: {fileID: 4900000, guid: 66b63813aa3dce34a9eb24c444a7237a, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 34.09
+    poseJson: {fileID: 4900000, guid: 302c2ef2c4073b443ab463c001067741, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 35.24
+    poseJson: {fileID: 4900000, guid: 39eedf294e0fb7f41aaaaa9bb2ebe723, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 37.08
+    poseJson: {fileID: 4900000, guid: b2b4b376faa799f4ab5ee204ab262fd6, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 37.28
+    poseJson: {fileID: 4900000, guid: b2b4b376faa799f4ab5ee204ab262fd6, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 38.21
+    poseJson: {fileID: 4900000, guid: 5f3200dfdc6f87442a2bda307571a8d9, type: 3}
+    windowBefore: 0.3
+    windowAfter: 0.3
+  - time: 31.17
+    poseJson: {fileID: 4900000, guid: 8ae82ec303b080d4283735bb4a0763d3, type: 3}
     windowBefore: 0.3
     windowAfter: 0.3
   angleTolerance: 60
@@ -3381,7 +3493,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -400, y: 100}
+  m_AnchoredPosition: {x: -400, y: 150}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &843461112
@@ -6773,8 +6885,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 83094124221418447b2a86e97af21431, type: 2}
-  m_sharedMaterial: {fileID: -731817926512327691, guid: 83094124221418447b2a86e97af21431, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
