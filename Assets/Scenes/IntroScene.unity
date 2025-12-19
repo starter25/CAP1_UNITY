@@ -518,7 +518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VideoEndLoader
   videoPlayer: {fileID: 0}
-  nextSceneName: PreGameScene
+  nextSceneName: LevelLoadingScene
 --- !u!328 &961739755
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -1072,7 +1072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::IntroController
   videoPlayer: {fileID: 961739755}
-  nextSceneName: PreGameScene
+  nextSceneName: LevelLoadingScene
   fadePanel: {fileID: 2820468}
   fadeDuration: 0.5
 --- !u!4 &1877822901
